@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SensationApp - Responsive admin template.</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!--STYLESHEET-->
+  <!--=================================================-->
+  <!--Roboto Slab Font [ OPTIONAL ] -->
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,400" rel="stylesheet">
+  <!--Bootstrap Stylesheet [ REQUIRED ]-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--Jasmine Stylesheet [ REQUIRED ]-->
+  <link href="css/style.css" rel="stylesheet">
+  <!--Font Awesome [ OPTIONAL ]-->
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!--Switchery [ OPTIONAL ]-->
+  <link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+  <!--Bootstrap Select [ OPTIONAL ]-->
+  <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+  <!--Bootstrap Validator [ OPTIONAL ]-->
+  <link href="plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
+  <!--jVector Map [ OPTIONAL ]-->
+  <link href="plugins/jvectormap/jquery-jvectormap.css" rel="stylesheet">
+  <!--Demo [ DEMONSTRATION ]-->
+  <link href="css/demo/jquery-steps.min.css" rel="stylesheet">
+  <!--Demo [ DEMONSTRATION ]-->
+  <link href="css/demo/jasmine.css" rel="stylesheet">
+  <link href="plugins/pace/pace.min.css" rel="stylesheet">
+  <script src="plugins/pace/pace.min.js"></script>
+
+</head>
+<body>
+  <div id="container" class="effect mainnav-lg navbar-fixed mainnav-fixed">
+      <!--NAVBAR-->
+      <!--===================================================-->
+      <header id="navbar">
+          <div id="navbar-container" class="boxed">
+              <!--Brand logo & name-->
+              <!--================================-->
+              <div class="navbar-header">
+                  <a href="index.html" class="navbar-brand">
+                      <i class="fa fa-cube brand-icon"></i>
+                      <div class="brand-title">
+                          <span class="brand-text">SNS Monitoring</span>
+                      </div>
+                  </a>
+              </div>
+              <div class="navbar-content clearfix">
+                  <ul class="nav navbar-top-links pull-left">
+                      <li class="tgl-menu-btn">
+                          <a class="mainnav-toggle" href="#"> <i class="fa fa-navicon fa-lg"></i> </a>
+                      </li>
+                         <li id="profilebtn" class="hidden-xs">
+                            <a href="JavaScript:void(0);"> <i class="fa fa-user fa-lg"></i> </a>
+                         </li>
+                      <li class="dropdown">
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <i class="fa fa-envelope fa-lg"></i> <span class="badge badge-header badge-warning">9</span>
+                          </a>
+                          <!--Message dropdown menu-->
+                          <div class="dropdown-menu dropdown-menu-md with-arrow">
+                              <div class="pad-all bord-btm">
+                                 <div class="h4 text-muted text-thin mar-no">You have 3 messages.</div>
+                              </div>
+                              <div class="nano scrollable">
+                                  <div class="nano-content">
+                                      <ul class="head-list">
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <div class="media-left"> <img src="img/av2.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">Andy sent you a message</div>
+                                                      <small class="text-muted">15 minutes ago</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <div class="media-left"> <img src="img/av4.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">Lucy sent you a message</div>
+                                                      <small class="text-muted">30 minutes ago</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <div class="media-left"> <img src="img/av3.png" alt="Profile Picture" class="img-circle img-sm"> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">Jackson sent you a message</div>
+                                                      <small class="text-muted">Yesterday</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <!--Dropdown footer-->
+                              <div class="pad-all bord-top">
+                                  <a href="#" class="btn-link text-dark box-block"> <i class="fa fa-angle-right fa-lg pull-right"></i>Show All Messages </a>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <i class="fa fa-bell fa-lg"></i> <span class="badge badge-header badge-danger">5</span> </a>
+                          <!--Notification dropdown menu-->
+                          <div class="dropdown-menu dropdown-menu-md with-arrow">
+                              <div class="pad-all bord-btm">
+                                <div class="h4 text-muted text-thin mar-no"> Notification </div>
+                              </div>
+                              <div class="nano scrollable">
+                                  <div class="nano-content">
+                                      <ul class="head-list">
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <div class="media-left"> <span class="icon-wrap icon-circle bg-primary"> <i class="fa fa-comment fa-lg"></i> </span> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">New comments waiting approval</div>
+                                                      <small class="text-muted">15 minutes ago</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <span class="badge badge-success pull-right">90%</span>
+                                                  <div class="media-left"> <span class="icon-wrap icon-circle bg-danger"> <i class="fa fa-hdd-o fa-lg"></i> </span> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">HDD is full</div>
+                                                      <small class="text-muted">50 minutes ago</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <div class="media-left"> <span class="icon-wrap icon-circle bg-info"> <i class="fa fa-file-word-o fa-lg"></i> </span> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">Write a news article</div>
+                                                      <small class="text-muted">Last Update 8 hours ago</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <span class="label label-danger pull-right">New</span>
+                                                  <div class="media-left"> <span class="icon-wrap icon-circle bg-purple"> <i class="fa fa-comment fa-lg"></i> </span> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">Comment Sorting</div>
+                                                      <small class="text-muted">Last Update 8 hours ago</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <!-- Dropdown list-->
+                                          <li>
+                                              <a href="#" class="media">
+                                                  <div class="media-left"> <span class="icon-wrap icon-circle bg-success"> <i class="fa fa-user fa-lg"></i> </span> </div>
+                                                  <div class="media-body">
+                                                      <div class="text-nowrap">New User Registered</div>
+                                                      <small class="text-muted">4 minutes ago</small>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <!--Dropdown footer-->
+                              <div class="pad-all bord-top">
+                                  <a href="#" class="btn-link text-dark box-block"> <i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications </a>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+                  <ul class="nav navbar-top-links pull-right">
+                        <li class="hidden-xs" id="toggleFullscreen">
+                          <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                             <span class="sr-only">Toggle fullscreen</span>
+                          </a>
+                        </li>
+                      <li class="dropdown">
+                          <a id="demo-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown"> <span class="lang-selected"> <img class="lang-flag" src="img/flags/Korea.png" alt="korea"> <span class="lang-id">KR</span> <span class="lang-name">Korea</span> </span>
+                          </a>
+                          <!--Language selector menu-->
+                          <ul class="head-list dropdown-menu with-arrow">
+                              <li>
+                                  <!--English-->
+                                  <a href="#" class="active"> <img class="lang-flag" src="img/flags/korea.png" alt="Korea"> <span class="lang-id">KR</span> <span class="lang-name">Korea</span> </a>
+                              </li>
+                              <li>
+                                  <!--Spain-->
+                                  <a href="#"> <img class="lang-flag" src="img/flags/united-kingdom.png" alt="English"> <span class="lang-id">EN</span> <span class="lang-name">English</span> </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li id="dropdown-user" class="dropdown">
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+                              <span class="pull-right"> <img class="img-circle img-user media-object" src="img/av1.png" alt="Profile Picture"> </span>
+                              <div class="username hidden-xs">함운경</div>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right with-arrow">
+                              <!-- User dropdown menu -->
+                              <ul class="head-list">
+                                  <li>
+                                      <a href="#"> <i class="fa fa-user fa-fw fa-lg"></i> Profile </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">  <i class="fa fa-gear fa-fw fa-lg"></i> Settings </a>
+                                  </li>
+                                  <li>
+                                      <a href="#"> <i class="fa fa-sign-out fa-fw"></i> Logout </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="hidden-xs">
+                          <a id="demo-toggle-aside" href="#">
+                          <i class="fa fa-navicon fa-lg"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </header>
+      <div class="boxed">
+          <div id="content-container">
+        <div id="profilebody">
+          <div class="pad-all animated fadeInDown">
+            <div class="row">
+              <div class="col-lg-2 col-sm-6 col-md-6 col-xs-12">
+                <div class="panel panel-default mar-no">
+                  <div class="panel-body">
+                    <a href="JavaScript:void(0);">
+                      <div class="pull-left"> <p class="profile-title text-bricky">Users</p> </div>
+                      <div class="pull-right text-bricky"> <i class="fa fa-users fa-4x"></i> </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 col-md-6 col-xs-12">
+                <div class="panel panel-default mar-no">
+                  <div class="panel-body">
+                    <a href="JavaScript:void(0);">
+                      <div class="pull-left"> <p class="profile-title text-bricky">Pictures</p> </div>
+                      <div class="pull-right text-bricky"> <i class="fa fa-picture-o fa-4x"></i> </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="pageheader">
+                  <h3><i class="fa fa-home"></i> Dashboard - monitoring </h3>
+                  <div class="breadcrumb-wrapper">
+                      <span class="label">You are here:</span>
+                      <ol class="breadcrumb">
+                          <li> <a href="#"> Home </a> </li>
+                          <li class="active"> Dashboard </li>
+                      </ol>
+                  </div>
+              </div>
+              <div id="page-content">
+
+                <div class="col-md-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">자해 긍/부정 언급량 상세</h3>
+                            <p class="mar-no">  기간 : 2019.10.15~ 2019.10. 28</p>
+                        </div>
+                        <div class="panel-body">
+                            <!--Morris Area Chart placeholder-->
+                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                            <div id="demo-morris-stack-bar" style="height:300px"></div>
+                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="panel">
+                          <div class="panel-heading">
+                              <h3 class="panel-title">자해 긍/부정 언급량 통합</h3>
+                                <p class="mar-no">  기간 : 2019.10.15~ 2019.10. 28</p>
+                          </div>
+                          <div class="panel-body">
+                              <!--Morris Area Chart placeholder-->
+                              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                              <div id="demo-morris-donut" style="height:300px"></div>
+                              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                  <div class="row">
+                      <div class="col-md-3">
+                          <div class="panel text-center">
+                              <!--Profile Widget-->
+                              <!--===================================================-->
+                              <div class="panel-body bg-primary pad-ver">
+                                  <i class="fa fa-facebook fa-5x"></i>
+                              </div>
+                              <div class="panel-footer">
+                                  <ul class="nav nav-section nav-justified">
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 0 </div>
+                                              <p class="mar-no">Followers</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 12.5K </div>
+                                              <p class="mar-no">Tags</p>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <!--===================================================-->
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="panel text-center">
+                              <!--Profile Widget-->
+                              <!--===================================================-->
+                              <div class="panel-body bg-info pad-ver">
+                                  <i class="fa fa-twitter fa-5x"></i>
+                              </div>
+                              <div class="panel-footer">
+                                  <ul class="nav nav-section nav-justified">
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 1.6k </div>
+                                              <p class="mar-no">Followers</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 3165 </div>
+                                              <p class="mar-no">Tweets</p>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <!--===================================================-->
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="panel text-center">
+                              <!--Profile Widget-->
+                              <!--===================================================-->
+                              <div class="panel-body bg-warning pad-ver">
+                                  <i class="fa fa-instagram fa-5x"></i>
+                              </div>
+                              <div class="panel-footer">
+                                  <ul class="nav nav-section nav-justified">
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 6.4K </div>
+                                              <p class="mar-no">Followers</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 58.2 </div>
+                                              <p class="mar-no">Tags</p>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <!--===================================================-->
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="panel text-center">
+                              <!--Profile Widget-->
+                              <!--===================================================-->
+                              <div class="panel-body bg-danger pad-ver">
+                                  <i class="fa fa-google fa-5x"></i>
+                              </div>
+                              <div class="panel-footer">
+                                  <ul class="nav nav-section nav-justified">
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 0 </div>
+                                              <p class="mar-no">Followers</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 1853 </div>
+                                              <p class="mar-no">Tags</p>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="section">
+                                              <div class="h4 mar-ver-5"> 0 </div>
+                                              <p class="mar-no">Tweets</p>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <!--===================================================-->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="panel defaultpanel">
+                              <div class="panel-heading">
+                                  <div class="panel-title">Monthly Statistics <small> based on the SNS Users</small></div>
+                              </div>
+                              <div class="panel-body pad-no">
+                                  <!--Default Accordion-->
+                                  <!--===================================================-->
+                                  <div class="panel-group accordion mar-no" id="statistics">
+                                      <div class="panel">
+                                          <!--Accordion title-->
+                                          <div class="panel-heading">
+                                              <div class="panel-title">
+                                                  <a data-parent="#statistics" data-toggle="collapse" href="#statisticsone">
+                                                     <i class="fa fa-calendar"></i> Top SNS
+                                                  </a>
+                                              </div>
+                                          </div>
+                                          <!--Accordion content-->
+                                          <div class="panel-collapse collapse in" id="statisticsone">
+                                              <div class="panel-body">
+                                                  <table class="table mar-no">
+                                                      <thead>
+                                                          <tr>
+                                                              <th>SNS</th>
+                                                              <th>Users</th>
+                                                              <th>Tags</th>
+                                                              <th>Changes</th>
+                                                              <th>Return</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td>Facebook</td>
+                                                              <td>incalculability</td>
+                                                              <td>125241</td>
+                                                              <td>0%</td>
+                                                              <td>
+                                                                  <div class="progress progress-striped progress-md">
+                                                                      <div style="width: 75%" class="progress-bar progress-bar-success">
+                                                                          <span class="sr-only">0% Complete (success)</span>
+                                                                      </div>
+                                                                      <div style="width: 25%" class="progress-bar progress-bar-info">
+                                                                          <span class="sr-only">100% Complete (warning)</span>
+                                                                      </div>
+                                                                  </div>
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>Twitter</td>
+                                                              <td>15614</td>
+                                                              <td>3152</td>
+                                                              <td>20%</td>
+                                                              <td>
+                                                                  <div class="progress progress-striped progress-md">
+                                                                      <div style="width: 45%" class="progress-bar progress-bar-success">
+                                                                          <span class="sr-only">45% Complete (success)</span>
+                                                                      </div>
+                                                                      <div style="width: 55%" class="progress-bar progress-bar-info">
+                                                                          <span class="sr-only">55% Complete (warning)</span>
+                                                                      </div>
+                                                                  </div>
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>Instagram</td>
+                                                              <td>6463</td>
+                                                              <td>58204</td>
+                                                              <td>35%</td>
+                                                              <td>
+                                                                  <div class="progress progress-striped progress-md">
+                                                                      <div style="width: 25%" class="progress-bar progress-bar-success">
+                                                                          <span class="sr-only">25% Complete (success)</span>
+                                                                      </div>
+                                                                      <div style="width: 75%" class="progress-bar progress-bar-info">
+                                                                          <span class="sr-only">75% Complete (warning)</span>
+                                                                      </div>
+                                                                  </div>
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>Google+</td>
+                                                              <td>incalculability</td>
+                                                              <td>1853</td>
+                                                              <td>0%</td>
+                                                              <td>
+                                                                  <div class="progress progress-striped progress-md">
+                                                                      <div style="width: 35%" class="progress-bar progress-bar-success">
+                                                                          <span class="sr-only">35% Complete (success)</span>
+                                                                      </div>
+                                                                      <div style="width: 65%" class="progress-bar progress-bar-info">
+                                                                          <span class="sr-only">65% Complete (warning)</span>
+                                                                      </div>
+                                                                  </div>
+                                                              </td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="panel defaultpanel">
+                                          <!--Accordion title-->
+                                          <div class="panel-heading">
+                                              <h4 class="panel-title">
+                                                  <a data-parent="#statistics" data-toggle="collapse" href="#statisticsTwo">
+                                                  <i class="fa fa-calendar"></i> Age Group </a>
+                                              </h4>
+                                          </div>
+                                          <!--Accordion content-->
+                                          <div class="panel-collapse collapse" id="statisticsTwo">
+                                              <div class="panel-body">
+                                                  <table class="table mar-no">
+                                                      <thead>
+                                                          <tr>
+                                                              <th class="text-center">Gender</th>
+                                                              <th>Unique User</th>
+                                                              <th>Percentage</th>
+                                                              <th class="text-center">Changes</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td class="text-center text-azure"><i class="fa fa-male"></i></td>
+                                                              <td>18 to 25 year old</td>
+                                                              <td class="center">25%</td>
+                                                              <td class="text-center"><i class="fa fa-caret-up text-success fa-2x"></i></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class="text-center text-azure"><i class="fa fa-male"></i></td>
+                                                              <td>26 to 35 year old</td>
+                                                              <td class="center">35%</td>
+                                                              <td class="text-center"><i class="fa fa-caret-down text-danger fa-2x"></i></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class="text-center text-azure"><i class="fa fa-male"></i></td>
+                                                              <td>36 to 45 year old</td>
+                                                              <td class="center">45%</td>
+                                                              <td class="text-center"><i class="fa fa-caret-up text-success fa-2x"></i></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class="text-center text-azure"><i class="fa fa-male"></i></td>
+                                                              <td>46 to 55 year old</td>
+                                                              <td class="center">40%</td>
+                                                              <td class="text-center"><i class="fa fa-caret-up text-success fa-2x"></i></td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--===================================================-->
+                                  <!--End Default Accordion-->
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <!--Panel with Header-->
+                          <!--===================================================-->
+                          <div class="panel">
+                              <div class="panel-body">
+                                  <div id="carousel-example-vertical" class="carousel vertical slide" data-ride="carousel">
+                                      <div class="carousel-inner" role="listbox">
+                                          <div class="item active">
+                                              <div class="ticker-headline">
+                                                  <div class="media">
+                                                      <span class="pull-left"><i class="fa fa-twitter fa-4x text-azure"></i></span>
+                                                      <div class="media-body">
+                                                          <div class="h4"><strong>Twitter</strong> <small>1 year ago</small></div>
+                                                          <p>오늘부터 트위터 상에서 자해와 자살 위험성이 높은 키워드 검색 시 한국생명의전화(@LifelineKorea)로 안내하는 #ThereIsHelp 기능이 도입됩니다. #ThereIsHelp 기능이 적용되는 키워드는 자살∙자해와 관련성 높은 단어로, 트위터 플랫폼 상에서 자살 방법에 대한 글이나 계정, 관련 이미지 등의 무분별한 노출을 방지하기 위해 선정되었습니다....</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="item">
+                                              <div class="ticker-headline">
+                                                  <div class="media">
+                                                      <span class="pull-left"><i class="fa fa-facebook fa-4x text-primary"></i></span>
+                                                      <div class="media-body">
+                                                          <div class="h4"><strong>Face Book</strong> <small>10 month ago</small></div>
+                                                          <p> 관련 해시태그를 완전히 삭제하지는 않을 예정이라고 하는데요. 이는 일부 사용자가 도움을 청하기 위해 게시물을 포스팅할 가능성도 있기 때문이라고 합니다. 페이스북 역시 자해·자살 유해 이미지를 검색하기 어렵게 만들며, 관련 내용을 흐리게 보이도록 하는 기술을 검토한다고 공지했죠...</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="item">
+                                              <div class="ticker-headline">
+                                                  <div class="media">
+                                                      <span class="pull-left"><i class="fa fa-google-plus fa-4x text-danger"></i></span>
+                                                      <div class="media-body">
+                                                          <div class="h4"><strong>Semantha Schwarz</strong> <small>1 hour ago</small></div>
+                                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id quam elementum odio tristique euismod. Suspendisse id nunc sed massa cursus efficitur. Praesent pulvinar malesuada metus fringilla euismod. Morbi sit amet tincidunt elit. Etiam semper bibendum mi, nec tempor sem pharetra sit amet...</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Controls -->
+                                      <a class="up carousel-control" href="#carousel-example-vertical" role="button" data-slide="prev">
+                                      <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="down carousel-control" href="#carousel-example-vertical" role="button" data-slide="next">
+                                      <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!--===================================================-->
+                          <!--End Panel with Header-->
+                          <!--Panel with Header-->
+                          <!--===================================================-->
+                          <div class="panel papernote">
+                              <div class="panel-body">
+                                  <div class="carousel slide" id="c-slide" data-ride="carousel">
+                                      <div class="carousel-inner">
+                                          <div class="item active">
+                                              <h4>공지사항 #1</h4>
+                                              <p>인스타그램 사용자별 감성분석 기능을 추가할 예정입니다.. </p>
+                                          </div>
+                                          <div class="item">
+                                              <h4>공지사항 #2</h4>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id quam elementum odio tristique euismod.
+                                                 Suspendisse id nunc sed massa cursus efficitur. Praesent pulvinar malesuada metus fringilla euismod. Morbi sit amet tincidunt elit. </p>
+                                          </div>
+                                          <div class="item">
+                                              <h4>공지사항 #3</h4>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id quam elementum odio tristique euismod.
+                                                 Suspendisse id nunc sed massa cursus efficitur. Praesent pulvinar malesuada metus fringilla euismod. Morbi sit amet tincidunt elit. </p>
+                                          </div>
+                                      </div>
+                                      <!--
+                                          <a class="left carousel-control" href="#c-slide" data-slide="prev">
+                                              <span class="fa fa-angle-left fa-2x"></span>
+                                          </a>
+                                          <a class="right carousel-control" href="#c-slide" data-slide="next">
+                                              <span class="fa fa-angle-right fa-2x"></span>
+                                          </a>
+                                          -->
+                                  </div>
+                              </div>
+                          </div>
+                          <!--===================================================-->
+                          <!--End Panel with Header-->
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="panel">
+                              <div class="panel-heading">
+                                  <h3 class="panel-title"> Country Table </h3>
+                              </div>
+                              <div class="panel-body">
+                                  <!--Hover Rows-->
+                                  <!--===================================================-->
+                                  <table class="table table-hover table-vcenter">
+                                      <thead>
+                                          <tr>
+                                              <th>#</th>
+                                              <th>hash Tags</th>
+                                              <th>Project Timeline</th>
+                                              <th>Status</th>
+                                              <th>Client</th>
+                                              <th class="hidden-xs">Progress</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>자해</td>
+                                            <td>11 november 2019</td>
+                                            <td>
+                                                <div class="label label-table label-info">Progress</div>
+                                            </td>
+                                            <td>함운경</td>
+                                            <td class="hidden-xs">
+                                                <div class="progress progress-striped progress-sm">
+                                                    <div class="progress-bar progress-bar-primary" style="width: 50%;"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                          <tr>
+                                              <td>2</td>
+                                              <td>자해, 자살</td>
+                                              <td>11 Joon 2019</td>
+                                              <td>
+                                                  <div class="label label-table label-info">Done</div>
+                                              </td>
+                                              <td>함운경</td>
+                                              <td class="hidden-xs">
+                                                  <div class="progress progress-striped progress-sm">
+                                                      <div class="progress-bar progress-bar-primary" style="width: 100%;"></div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>3</td>
+                                              <td>Wrist cut</td>
+                                              <td>15 Joon 2019</td>
+                                              <td>
+                                                  <div class="label label-table label-danger">Done</div>
+                                              </td>
+                                              <td>함운경</td>
+                                              <td class="hidden-xs">
+                                                  <div class="progress progress-striped progress-sm">
+                                                      <div class="progress-bar progress-bar-success" style="width: 100%;"></div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>4</td>
+                                              <td>손목 자해</td>
+                                              <td>19 Joon 2019</td>
+                                              <td>
+                                                  <div class="label label-table label-success">Done</div>
+                                              </td>
+                                              <td>함운경</td>
+                                              <td class="hidden-xs">
+                                                  <div class="progress progress-striped progress-sm">
+                                                      <div class="progress-bar progress-bar-info" style="width: 100%;"></div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>5</td>
+                                              <td>우울</td>
+                                              <td>25 May 2016</td>
+                                              <td>
+                                                  <div class="label label-table label-warning">Done</div>
+                                              </td>
+                                              <td>함운경</td>
+                                              <td class="hidden-xs">
+                                                  <div class="progress progress-striped progress-sm">
+                                                      <div class="progress-bar progress-bar-warning" style="width: 100%;"></div>
+                                                  </div>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <!--===================================================-->
+                                  <!--End Hover Rows-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <svg width="100%" height="700" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
+              </div>
+              <!--===================================================-->
+              <!--End page content-->
+          </div>
+          <!--MAIN NAVIGATION-->
+          <nav id="mainnav-container">
+              <div id="mainnav">
+                  <div id="mainnav-menu-wrap">
+                      <div class="nano">
+                          <div class="nano-content">
+                              <ul id="mainnav-menu" class="list-group">
+                                  <!--Category name-->
+                                  <li class="list-header">Navigation</li>
+                                  <!--Menu list item-->
+                                  <li>
+                                      <a href="javascript:void(0)">
+                                      <i class="fa fa-home"></i>
+                                      <span class="menu-title">Main home</span>
+                                      <i class="arrow"></i>
+                                      </a>
+                                      <!--Submenu-->
+                                      <ul class="collapse">
+                                          <li><a href="index.html"><i class="fa fa-caret-right"></i> 홈페이지</a></li>
+                                      </ul>
+                                  </li>
+
+                                  <li class="list-divider"></li>
+                                  <!--Category name-->
+                                  <li class="list-header">Components</li>
+                                  <!--Menu list item-->
+
+                                  <li>
+                                      <a href="#">
+                                      <i class="fa fa-briefcase"></i>
+                                      <span class="menu-title">Instagram analysis</span>
+                                      <i class="arrow"></i>
+                                      </a>
+                                      <!--Submenu-->
+                                      <ul class="collapse">
+                                          <li><a href="ui-animation.html"><i class="fa fa-caret-right"></i> 감성분석 </a></li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                      <i class="fa fa-file"></i>
+                                      <span class="menu-title">Pages</span>
+                                      <i class="arrow"></i>
+                                      </a>
+                                      <!--Submenu-->
+                                      <ul class="collapse">
+                                          <li><a href="pages-gallery.html"><i class="fa fa-caret-right"></i> 갤러리 </a></li>
+                                          <li><a href="pages-profile.html"><i class="fa fa-caret-right"></i> 홈페이지 소개 </a></li>
+                                      </ul>
+                                  </li>
+                                  <!--Menu list item-->
+
+                                  <li>
+                                      <a href="#">
+                                      <i class="fa fa-line-chart"></i>
+                                      <span class="menu-title">login</span>
+                                      <i class="arrow"></i>
+                                      </a>
+                                      <!--Submenu-->
+                                      <ul class="collapse">
+                                        <li><a href="pages-login.html"><i class="fa fa-caret-right"></i> 로그인 </a></li>
+                                        <li><a href="pages-register.html"><i class="fa fa-caret-right"></i> 회원가입 </a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="list-divider"></li>
+                                  <!--Category name-->
+                                  <li class="list-header">Extra</li>
+                                  <li>
+                                      <a href="#">
+                                      <i class="fa fa-map-marker"></i>
+                                      <span class="menu-title">
+                                      Maps
+                                      <span class="label label-mint pull-right">New</span>
+                                      </span>
+                                      </a>
+                                      <!--Submenu-->
+                                      <ul class="collapse">
+                                          <li><a href="maps-vectormap.html">Vector Maps</a></li>
+                                      </ul>
+                                  </li>
+                                  <!--Menu list item-->
+                              </ul>
+                              <div class="mainnav-widget">
+                                  <!-- Show the button on collapsed navigation -->
+                                  <div class="show-small">
+                                      <a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
+                                      <i class="fa fa-desktop"></i>
+                                      </a>
+                                  </div>
+                                  <!-- Hide the content on collapsed navigation -->
+                                  <div id="demo-wg-server" class="hide-small mainnav-widget-content">
+                                      <ul class="list-group">
+                                          <li class="list-header pad-no pad-ver">Server Status</li>
+                                          <li class="mar-btm">
+                                              <span class="label label-primary pull-right">15%</span>
+                                              <p>CPU Usage</p>
+                                              <div class="progress progress-sm">
+                                                  <div class="progress-bar progress-bar-primary" style="width: 15%;">
+                                                      <span class="sr-only">15%</span>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                          <li class="mar-btm">
+                                              <span class="label label-purple pull-right">75%</span>
+                                              <p>Bandwidth</p>
+                                              <div class="progress progress-sm">
+                                                  <div class="progress-bar progress-bar-purple" style="width: 75%;">
+                                                      <span class="sr-only">75%</span>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!--================================-->
+                  <!--End menu-->
+              </div>
+          </nav>
+          <aside id="aside-container">
+              <div id="aside">
+                  <div class="nano">
+                      <div class="nano-content">
+                          <!--Nav tabs-->
+                          <!--================================-->
+                          <ul class="nav nav-tabs nav-justified">
+                              <li class="active">
+                                  <a href="#demo-asd-tab-1" data-toggle="tab"> <i class="fa fa-comments"></i> </a>
+                              </li>
+                              <li>
+                                  <a href="#demo-asd-tab-3" data-toggle="tab"> <i class="fa fa-wrench"></i> </a>
+                              </li>
+                          </ul>
+                          <div class="tab-content">
+                              <!--First tab (Contact list)-->
+                              <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                              <div class="tab-pane fade in active" id="demo-asd-tab-1">
+                                  <h4 class="pad-hor text-thin"> Online Members (2) </h4>
+                                  <div class="list-group bg-trans">
+                                      <div class="list-group-item">
+                                          <div class="pull-left avatar mar-rgt">
+                                          <img src="img/av1.png" alt="" class="img-sm">
+                                          <i class="on bottom text-light"></i>
+                                          </div>
+                                          <div class="inline-block">
+                                              <div class="text-small">함운경</div>
+                                              <small class="text-mute">Available</small>
+                                          </div>
+                                      </div>
+                                      <div class="list-group-item">
+                                          <div class="pull-left avatar mar-rgt">
+                                          <img src="img/av2.png" alt="" class="img-sm">
+                                          <i class="on bottom text-light"></i>
+                                          </div>
+                                          <div class="inline-block pad-ver-5">
+                                              <div class="text-small">김도윤</div>
+                                              <small class="text-mute">Available</small>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="tab-pane fade" id="demo-asd-tab-3">
+                                  <ul class="list-group bg-trans">
+                                      <li class="list-header">
+                                          <h4 class="text-thin">Account Settings</h4>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="pull-right">
+                                              <input class="demo-switch" type="checkbox" checked>
+                                          </div>
+                                          <p>Show my personal status</p>
+                                          <small class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="pull-right">
+                                              <input class="demo-switch" type="checkbox" checked>
+                                          </div>
+                                          <p>Show offline contact</p>
+                                          <small class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="pull-right">
+                                              <input class="demo-switch" type="checkbox">
+                                          </div>
+                                          <p>Invisible mode </p>
+                                          <small class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small>
+                                      </li>
+                                  </ul>
+                                  <hr>
+                                  <ul class="list-group bg-trans">
+                                      <li class="list-header">
+                                          <h4 class="text-thin">Public Settings</h4>
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="pull-right">
+                                              <input class="demo-switch" type="checkbox" checked>
+                                          </div>
+                                          Online status
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="pull-right">
+                                              <input class="demo-switch" type="checkbox">
+                                          </div>
+                                          Show offline contact
+                                      </li>
+                                      <li class="list-group-item">
+                                          <div class="pull-right">
+                                              <input class="demo-switch" type="checkbox" checked>
+                                          </div>
+                                          Show my device icon
+                                      </li>
+                                  </ul>
+                                  <hr>
+                                  <h4 class="pad-hor text-thin">Task Progress</h4>
+                                  <div class="pad-all">
+                                      <p>Upgrade Progress</p>
+                                      <div class="progress progress-sm">
+                                          <div class="progress-bar progress-bar-success" style="width: 15%;"><span class="sr-only">15%</span></div>
+                                      </div>
+                                      <small class="text-muted">15% Completed</small>
+                                  </div>
+                                  <div class="pad-hor">
+                                      <p>Database</p>
+                                      <div class="progress progress-sm">
+                                          <div class="progress-bar progress-bar-danger" style="width: 75%;"><span class="sr-only">75%</span></div>
+                                      </div>
+                                      <small class="text-muted">17/23 Database</small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </aside>
+      </div>
+      <footer id="footer">
+          <div class="show-fixed pull-right">
+              <ul class="footer-list list-inline">
+                  <li>
+                      <p class="text-sm">Ham Proggres</p>
+                      <div class="progress progress-sm progress-light-base">
+                          <div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="text-sm">safe homepage</p>
+                      <div class="progress progress-sm progress-light-base">
+                          <div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+                      </div>
+                  </li>
+                  <li>
+                      <button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
+                  </li>
+              </ul>
+          </div>
+          <!-- Visible when footer positions are static -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <div class="hide-fixed pull-right pad-rgt">SNS Selfharm Monitoring v1.2</div>
+          <p class="pad-lft">&#0169; 2019 충북대학교 소프트웨어학과 - 쓱싹</p>
+      </footer>
+      <button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
+      <!--===================================================-->
+  </div>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3-legend.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <!--BootstrapJS [ RECOMMENDED ]-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--Fast Click [ OPTIONAL ]-->
+  <script src="plugins/fast-click/fastclick.min.js"></script>
+  <!--Jasmine Admin [ RECOMMENDED ]-->
+  <script src="js/scripts.js"></script>
+  <!--Switchery [ OPTIONAL ]-->
+  <script src="plugins/switchery/switchery.min.js"></script>
+  <!--Morris.js [ OPTIONAL ]-->
+  <script src="plugins/morris-js/morris.min.js"></script>
+  <script src="plugins/morris-js/raphael-js/raphael.min.js"></script>
+  <!--Bootstrap Select [ OPTIONAL ]-->
+  <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+  <!--Fullscreen jQuery [ OPTIONAL ]-->
+  <script src="plugins/screenfull/screenfull.js"></script>
+  <!--Demo script [ DEMONSTRATION ]-->
+  <script src="js/demo/jasmine.js"></script>
+  <!--Demo script [ DEMONSTRATION ]-->
+  <script src="js/demo/charts-morris.js"></script>
+	<script>
+		// Based loosely from this D3 bubble graph https://bl.ocks.org/mbostock/4063269
+		// And this Forced directed diagram https://bl.ocks.org/mbostock/4062045
+		let data = [{
+			cat: '긍정', name: '정상적인', value: 30,
+			icon: 'img/9.png',
+			desc: `
+				정상적인
+			`
+		},
+    {
+			cat: '긍정', name: '희망', value: 15,
+			icon: 'img/10.png',
+			desc: `
+				희망
+			`
+		},
+    {
+			cat: '긍정', name: '도움', value: 25,
+			icon: 'img/12.png',
+			desc: `
+				도움
+			`
+		}, /*{
+			cat: 'framework', name: 'Foundation', value: 10,
+			icon: '',
+		},*/{
+			cat: '중립', name: '참다', value: 30,
+			icon: 'img/14.png',
+			desc: `
+			 참다.
+			`
+		},
+    {
+			cat: '중립', name: '상담', value: 30,
+			icon: 'img/15.png',
+			desc: `
+			 상담.
+			`
+		},
+    {
+      cat: '부정', name: '피폐하다', value: 20,
+      icon: 'img/1.png',
+      desc: `
+        피폐하다.
+      `
+    },
+    {
+      cat: '부정', name: '우울', value: 20,
+      icon: 'img/2.png',
+      desc: `
+        우울.
+      `
+    },
+    {
+      cat: '부정', name: '힘들다', value: 20,
+      icon: 'img/3.png',
+      desc: `
+        힘들다.
+      `
+    },
+    {
+      cat: '부정', name: '심각하다', value: 25,
+      icon: 'img/4.png',
+      desc: `
+        심각하다.
+      `
+    },
+    {
+      cat: '부정', name: '스트레스', value: 40,
+      icon: 'img/6.png',
+      desc: `
+        스트레스.
+      `
+    },
+    {
+      cat: '부정', name: '후회하다', value: 15,
+      icon: 'img/7.png',
+      desc: `
+        후회하다.
+      `
+    },
+    {
+      cat: '부정', name: '왕따', value: 10,
+      icon: 'img/5.png',
+      desc: `
+        왕따.
+      `
+    },
+    {
+      cat: '부정', name: '자살', value: 40,
+      icon: 'img/8.png',
+      desc: `
+        자살.
+      `
+    },];
+	</script>
+
+	<script>
+		let svg = d3.select('svg');
+		let width = document.body.clientWidth; // get width in pixels
+		let height = +svg.attr('height');
+		let centerX = width * 0.5;
+		let centerY = height * 0.5;
+		let strength = 0.05;
+		let focusedNode;
+
+		let format = d3.format(',d');
+
+		let scaleColor = d3.scaleOrdinal(d3.schemeCategory20);
+
+		// use pack to calculate radius of the circle
+		let pack = d3.pack()
+			.size([width , height ])
+			.padding(1.5);
+
+		let forceCollide = d3.forceCollide(d => d.r + 1);
+
+		// use the force
+		let simulation = d3.forceSimulation()
+			// .force('link', d3.forceLink().id(d => d.id))
+			.force('charge', d3.forceManyBody())
+			.force('collide', forceCollide)
+			// .force('center', d3.forceCenter(centerX, centerY))
+			.force('x', d3.forceX(centerX ).strength(strength))
+			.force('y', d3.forceY(centerY ).strength(strength));
+
+		// reduce number of circles on mobile screen due to slow computation
+		if ('matchMedia' in window && window.matchMedia('(max-device-width: 767px)').matches) {
+			data = data.filter(el => {
+				return el.value >= 50;
+			});
+		}
+
+		let root = d3.hierarchy({ children: data })
+			.sum(d => d.value);
+
+		// we use pack() to automatically calculate radius conveniently only
+		// and get only the leaves
+		let nodes = pack(root).leaves().map(node => {
+			console.log('node:', node.x, (node.x - centerX) * 2);
+			const data = node.data;
+			return {
+				x: centerX + (node.x - centerX) * 3, // magnify start position to have transition to center movement
+				y: centerY + (node.y - centerY) * 3,
+				r: 0, // for tweening
+				radius: node.r, //original radius
+				id: data.cat + '.' + (data.name.replace(/\s/g, '-')),
+				cat: data.cat,
+				name: data.name,
+				value: data.value,
+				icon: data.icon,
+				desc: data.desc,
+			}
+		});
+		simulation.nodes(nodes).on('tick', ticked);
+
+		svg.style('background-color', '#eee');
+		let node = svg.selectAll('.node')
+			.data(nodes)
+			.enter().append('g')
+			.attr('class', 'node')
+			.call(d3.drag()
+				.on('start', (d) => {
+					if (!d3.event.active) simulation.alphaTarget(0.2).restart();
+					d.fx = d.x;
+					d.fy = d.y;
+				})
+				.on('drag', (d) => {
+					d.fx = d3.event.x;
+					d.fy = d3.event.y;
+				})
+				.on('end', (d) => {
+					if (!d3.event.active) simulation.alphaTarget(0);
+					d.fx = null;
+					d.fy = null;
+				}));
+
+		node.append('circle')
+			.attr('id', d => d.id)
+			.attr('r', 0)
+			.style('fill', d => scaleColor(d.cat))
+			.transition().duration(2000).ease(d3.easeElasticOut)
+				.tween('circleIn', (d) => {
+					let i = d3.interpolateNumber(0, d.radius);
+					return (t) => {
+						d.r = i(t);
+						simulation.force('collide', forceCollide);
+					}
+				})
+
+		node.append('clipPath')
+			.attr('id', d => `clip-${d.id}`)
+			.append('use')
+			.attr('xlink:href', d => `#${d.id}`);
+
+		// display text as circle icon
+		node.filter(d => !String(d.icon).includes('img/'))
+			.append('text')
+			.classed('node-icon', true)
+			.attr('clip-path', d => `url(#clip-${d.id})`)
+			.selectAll('tspan')
+			.data(d => d.icon.split(';'))
+			.enter()
+				.append('tspan')
+				.attr('x', 0)
+				.attr('y', (d, i, nodes) => (13 + (i - nodes.length / 2 - 0.5) * 10))
+				.text(name => name);
+
+		// display image as circle icon
+		node.filter(d => String(d.icon).includes('img/'))
+			.append('image')
+			.classed('node-icon', true)
+			.attr('clip-path', d => `url(#clip-${d.id})`)
+			.attr('xlink:href', d => d.icon)
+			.attr('x', d => - d.radius * 0.7)
+			.attr('y', d => - d.radius * 0.7)
+			.attr('height', d => d.radius * 2 * 0.7)
+			.attr('width', d => d.radius * 2 * 0.7)
+
+		node.append('title')
+			.text(d => (d.cat + '::' + d.name + '\n' + format(d.value)));
+
+		let legendOrdinal = d3.legendColor()
+			.scale(scaleColor)
+			.shape('circle');
+
+		let legend = svg.append('g')
+			.classed('legend-color', true)
+			.attr('text-anchor', 'start')
+			.attr('transform','translate(20,30)')
+			.style('font-size','12px')
+			.call(legendOrdinal);
+
+		let sizeScale = d3.scaleOrdinal()
+  			.domain(['less use', 'more use'])
+  			.range([5, 10] );
+
+		let legendSize = d3.legendSize()
+			.scale(sizeScale)
+			.shape('circle')
+			.shapePadding(10)
+			.labelAlign('end');
+
+		let legend2 = svg.append('g')
+			.classed('legend-size', true)
+			.attr('text-anchor', 'start')
+			.attr('transform', 'translate(150, 25)')
+			.style('font-size', '12px')
+			.call(legendSize);
+
+
+		/*
+		<foreignObject class="circle-overlay" x="10" y="10" width="100" height="150">
+			<div class="circle-overlay__inner">
+				<h2 class="circle-overlay__title">ReactJS</h2>
+				<p class="circle-overlay__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sunt, aspernatur. Autem repudiandae, laboriosam. Nulla quidem nihil aperiam dolorem repellendus pariatur, quaerat sed eligendi inventore ipsa natus fugiat soluta doloremque!</p>
+			</div>
+		</foreignObject>
+		*/
+		let infoBox = node.append('foreignObject')
+			.classed('circle-overlay hidden', true)
+			.attr('x', -350 * 0.5 * 0.8)
+			.attr('y', -350 * 0.5 * 0.8)
+			.attr('height', 350 * 0.8)
+			.attr('width', 350 * 0.8)
+				.append('xhtml:div')
+				.classed('circle-overlay__inner', true);
+
+		infoBox.append('h2')
+			.classed('circle-overlay__title', true)
+			.text(d => d.name);
+
+		infoBox.append('p')
+			.classed('circle-overlay__body', true)
+			.html(d => d.desc);
+
+
+		node.on('click', (currentNode) => {
+			d3.event.stopPropagation();
+			console.log('currentNode', currentNode);
+			let currentTarget = d3.event.currentTarget; // the <g> el
+
+			if (currentNode === focusedNode) {
+				// no focusedNode or same focused node is clicked
+				return;
+			}
+			let lastNode = focusedNode;
+			focusedNode = currentNode;
+
+			simulation.alphaTarget(0.2).restart();
+			// hide all circle-overlay
+			d3.selectAll('.circle-overlay').classed('hidden', true);
+			d3.selectAll('.node-icon').classed('node-icon--faded', false);
+
+			// don't fix last node to center anymore
+			if (lastNode) {
+				lastNode.fx = null;
+				lastNode.fy = null;
+				node.filter((d, i) => i === lastNode.index)
+					.transition().duration(2000).ease(d3.easePolyOut)
+					.tween('circleOut', () => {
+						let irl = d3.interpolateNumber(lastNode.r, lastNode.radius);
+						return (t) => {
+							lastNode.r = irl(t);
+						}
+					})
+					.on('interrupt', () => {
+						lastNode.r = lastNode.radius;
+					});
+			}
+
+			// if (!d3.event.active) simulation.alphaTarget(0.5).restart();
+
+			d3.transition().duration(2000).ease(d3.easePolyOut)
+				.tween('moveIn', () => {
+					console.log('tweenMoveIn', currentNode);
+					let ix = d3.interpolateNumber(currentNode.x, centerX);
+					let iy = d3.interpolateNumber(currentNode.y, centerY);
+					let ir = d3.interpolateNumber(currentNode.r, centerY * 0.5);
+					return function (t) {
+						// console.log('i', ix(t), iy(t));
+						currentNode.fx = ix(t);
+						currentNode.fy = iy(t);
+						currentNode.r = ir(t);
+						simulation.force('collide', forceCollide);
+					};
+				})
+				.on('end', () => {
+					simulation.alphaTarget(0);
+					let $currentGroup = d3.select(currentTarget);
+					$currentGroup.select('.circle-overlay')
+						.classed('hidden', false);
+					$currentGroup.select('.node-icon')
+						.classed('node-icon--faded', true);
+
+				})
+				.on('interrupt', () => {
+					console.log('move interrupt', currentNode);
+					currentNode.fx = null;
+					currentNode.fy = null;
+					simulation.alphaTarget(0);
+				});
+
+		});
+
+		// blur
+		d3.select(document).on('click', () => {
+			let target = d3.event.target;
+			// check if click on document but not on the circle overlay
+			if (!target.closest('#circle-overlay') && focusedNode) {
+				focusedNode.fx = null;
+				focusedNode.fy = null;
+				simulation.alphaTarget(0.2).restart();
+				d3.transition().duration(2000).ease(d3.easePolyOut)
+					.tween('moveOut', function () {
+						console.log('tweenMoveOut', focusedNode);
+						let ir = d3.interpolateNumber(focusedNode.r, focusedNode.radius);
+						return function (t) {
+							focusedNode.r = ir(t);
+							simulation.force('collide', forceCollide);
+						};
+					})
+					.on('end', () => {
+						focusedNode = null;
+						simulation.alphaTarget(0);
+					})
+					.on('interrupt', () => {
+						simulation.alphaTarget(0);
+					});
+
+				// hide all circle-overlay
+				d3.selectAll('.circle-overlay').classed('hidden', true);
+				d3.selectAll('.node-icon').classed('node-icon--faded', false);
+			}
+		});
+
+		function ticked() {
+			node
+				.attr('transform', d => `translate(${d.x},${d.y})`)
+				.select('circle')
+					.attr('r', d => d.r);
+		}
+	</script>
+</body>
+</html>
